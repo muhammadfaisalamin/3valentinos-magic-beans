@@ -55,3 +55,39 @@ testing" git push 🔍 Setelah Push
 👉 Buka GitHub repo kamu 👉 Kamu akan lihat:
 
 file pages/Cart.ts sudah muncul ada tombol Compare & pull request
+
+# Merge branch test/playwright-init dengan develop
+
+- Pindah ke branch develop
+  - git checkout develop
+- Ambil update terbaru (optional tapi recomended)
+  - git pull origin develop
+- Merge branch
+  - git merge test/playwright-init
+    - menggabungkan semua commit dari branch test ke develop
+    - history tetap aman (tidak overwrite)
+- Push ke github
+  - git push origin develop
+
+# Step Ringkas
+
+- git checkout develop
+- git pull origin develop
+- git merge test/playwright-init
+- git push origin develop
+
+# 🔥 Alternatif (Cara Lebih “Professional Team”)
+
+Biasanya di perusahaan:
+
+👉 TIDAK langsung merge manual 👉 Tapi pakai Pull Request (PR)
+
+Flow-nya:
+
+- Push branch kamu (sudah ✔️)
+- Buka GitHub
+- Klik: 👉 Compare & Pull Request
+- Base: develop
+- Compare: test/playwright-init
+- Klik: 👉 Create Pull Request
+- Merge
