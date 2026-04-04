@@ -91,3 +91,72 @@ Flow-nya:
 - Compare: test/playwright-init
 - Klik: 👉 Create Pull Request
 - Merge
+
+```txt
+# Kapan HARUS pull / merge lagi?
+
+Ini penting banget 👇
+
+🟡 Kasus 1: Kamu kerja sendirian (seperti sekarang)
+
+👉 Tidak perlu apa-apa
+👉 Fokus coding saja 🚀
+
+🔴 Kasus 2: Ada update di develop (tim lain push)
+
+Misalnya:
+
+temanmu push fitur baru
+ada perubahan config
+ada fix CI/CD
+
+👉 Maka kamu perlu update branch kamu:
+
+git checkout test/e2e-auth-flow
+git pull origin develop
+
+👉 Ini akan:
+
+mengambil perubahan dari develop
+merge ke branch kamu
+🔥 Alternatif yang Lebih “Clean” (Advanced)
+
+Kalau mau lebih rapi:
+
+git fetch origin
+git rebase origin/develop
+
+👉 Ini bikin history lebih clean (dipakai di tim senior)
+
+🎯 Rule Sederhana (Pegangan Kamu)
+
+👉 Setelah buat branch:
+
+LANGSUNG CODING ✅
+
+👉 Kalau develop berubah:
+
+SYNC DULU 🔁
+🚀 Workflow Ideal Kamu Sekarang
+1. checkout develop
+2. pull latest
+3. create branch baru
+4. coding 🔥
+5. commit
+6. push
+7. pull request → develop
+💡 Insight Penting (Level SDET / Remote)
+
+Kesalahan umum:
+❌ terlalu sering merge tanpa perlu
+❌ takut coding karena belum “sync”
+
+👉 Padahal:
+
+branch itu snapshot dari waktu tertentu
+kamu aman selama tidak konflik
+```
+
+- npm i --save mailslurp-client
+- create a .env file
+-
