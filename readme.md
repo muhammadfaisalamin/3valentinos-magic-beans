@@ -159,4 +159,4 @@ kamu aman selama tidak konflik
 
 - npm i --save mailslurp-client
 - create a .env file
--
+- video 57, todo video 58
